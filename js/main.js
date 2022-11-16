@@ -1,3 +1,4 @@
+//Logo Animation//
 const loader = document.querySelector('.loader');
 const main = document.querySelector('.main');
 
@@ -12,6 +13,7 @@ function init() {
 }
 
 init();
+
 
 //Hamburger//
 const hamburgerButton = document.getElementById('hamburger')

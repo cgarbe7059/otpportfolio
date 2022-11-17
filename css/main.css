@@ -1,0 +1,76 @@
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+}
+    
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "main main main main"
+    "content1 content2 content2 content3"
+    "footer footer footer footer";
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 0.2fr 1.5fr 1.2fr 0.5fr;
+grid-gap: 0.2rem;
+font-weight: 800;
+text-transform: uppercase;
+font-size: 12px;
+color: #000000;
+text-align: center;
+}
+
+nav {
+    background: #000000;
+    color: white;
+    font-size: 20px;
+    height: 30px;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);  
+}
+
+.h1 {
+grid-area: nav,
+}
+
+#content1 {
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#content2 {
+     grid-area: content2;
+     border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+#content3 {
+    grid-area: content3;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+footer {
+    background: #000000;
+    grid-area: footer;
+    height: 30px;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+@media only screen and (max-width: 550px) {
+    .container {
+        grid-template-areas: 
+        "nav"
+        "sidebar"
+        "main"
+        "content1"
+        "content2"
+        "content3"
+        "footer"
+        grid;
+    }
+}

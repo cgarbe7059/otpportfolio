@@ -1,7 +1,9 @@
-
-#form-group {
-  margin-bottom: 20px;
-  align-items: center;
+.form-group {
+  margin: auto;
+  padding: 20px;
+  display:table;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -42,6 +44,7 @@ h4 {
   line-height: 1.5;
 }
 
+
 /* ///// inputs /////*/
 
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
@@ -53,7 +56,6 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 }
 
 .styled-input {
-  width: 293px;
   margin: 1rem 0;
   position: relative;
   border-radius: 4px;
@@ -77,15 +79,16 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 }
 
 .styled-input.wide { 
-  width: 650px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 50%;
 }
 
 input,
 textarea {
   padding: 30px;
   border: 0;
-  width: 100%;
+  max-width: 100%;
+  min-width: 40%;
   font-size: 1rem;
   background-color: #2d2d2d;
   color: white;
@@ -103,7 +106,7 @@ textarea:focus ~ span {
 }
 
 textarea {
-  width: 100%;
+ 
   min-height: 15em;
 }
 
@@ -113,6 +116,24 @@ textarea {
   margin: 20px auto 25px auto;
 }
 
+.btn, .submit {
+  background-color: coral;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  width: 200px;
+  font-size: 30px
+  height: 55px;
+  border-radius: 30px;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;  
+  display: inline;
+
+}
 
 .submit-btn:hover {
   transform: translateY(1px);

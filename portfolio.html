@@ -137,7 +137,7 @@
 
   <footer>
 
-    <div class="container" id="contact-me">
+    <div class="contact" id="contact-me">
       <div class="row">
           <h1>Contact Me!</h1>
       </div>
@@ -145,22 +145,22 @@
 
     <div class="row">
 			<h4 style="text-align:center">I'd love to hear from you!</h4>
-	</div>
+	</div></div>
 
    
-    
-    <form action= "https://formsubmit.co/candissg22@gmail.com" method="POST">
+  <div class="container">
+    <form class ="tww" action= "https://formsubmit.co/candissg22@gmail.com" method="POST">
       <!-- Honey Pot -->
       <input type ="text" name="_honey" style="display: none;">
 
       <!-- Disable Captcha -->
       <input type="hidden" name="_captcha" value="false">
       
-      <input type="hidden" name="_next" value="thank-you hidden">
+      <input type="hidden" name="_next" value="/success.html">
 
       <div class="form-group">
           
-          <input 
+          <input type="text"
           name="name"
           class="" 
           placeholder="Full Name" 
@@ -172,7 +172,7 @@
         
         <div class="form-group">
          
-          <input 
+          <input  type="email"
           name="email" 
           class=""
           placeholder="Email Address" />
@@ -184,7 +184,7 @@
 			
         <div class="form-group">
           
-          <input
+          <input type ="text"
            name="phone"
            class=""
            placeholder="Contact Number" />
@@ -195,20 +195,22 @@
        
           
         <div class="form-group">
-          <textarea 
+          <textarea  id ='message'
           name="message" placeholder="Message"
          class="invalid" ></textarea>
           <div class="error-hint hidden">
             Message is required
-          </div>
+           
         </div>
 
 
         <hr/>
 
         
-          <div class="btn">
-      <button id ="submit" class="btn">SUBMIT</button></div>
+        <div class="btn">
+          <button type= "submit" id ="submit" class="btn">SUBMIT</button></div>
+       
+      </div>
 
       </form>
 

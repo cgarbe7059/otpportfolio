@@ -24,3 +24,12 @@ function toggleButton() {
 }
 
 hamburgerButton.addEventListener('click', toggleButton)
+
+const QuickChart = require('quickchart-js');
+
+const myChart = new QuickChart();
+myChart.setConfig({
+  type: 'bar',
+  data: { labels: ['Hello world', 'Foo bar'], datasets: [{ label: 'Foo', data: [1, 2] }] },
+});
+

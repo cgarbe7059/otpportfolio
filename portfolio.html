@@ -76,8 +76,32 @@
     <div class="headshot-container"></div>
     <img class="headshot" src="/images/Dream_TradingCard (2).jpg" alt="CG headshot">
   </section>
-
-
+  <canvas>
+  <script>
+    const ctx = document.getElementById('myChart');
+  
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+    
+  </script>
+   
+  </canvas>
   <section class="sub-section">
     <a class="service-item">
       <h3 class="title"><i class="fa-brands fa-html5"></i>HTML5</h3>
@@ -88,6 +112,7 @@
     <a class="service-item">
       <h3 class="title"><i class="fa-brands fa-square-js"></i>JavaScript</h3>
     </a>
+    <iframe src="https://quickchart.io/chart-maker/view/zm-6ddecaf3-667f-4e59-b5d0-00fc19c8f8ce" frameborder="0" width="500" height="400"></iframe>
   </section>
 
 
@@ -149,7 +174,7 @@
 
    
   <div class="container">
-    <form class ="tww" action= "https://formsubmit.co/candissg22@gmail.com" method="POST">
+    <form target ="_blanl" action= "https://formsubmit.co/candissg22@gmail.com" method="POST">
       <!-- Honey Pot -->
       <input type ="text" name="_honey" style="display: none;">
 
@@ -159,12 +184,9 @@
       <input type="hidden" name="_next" value="https://www.otpportfolio.com/portfolio.html">
 
       <div class="form-group">
-          
-          <input type="text"
-          name="name"
-          class="" 
-          placeholder="Full Name" 
-          />
+          <input type="text" id="name" name="name" placeholder="Your Name" required
+          name="name" class="form-control" placeholder="Full Name" >
+  
 
         <div class="error-hint hidden">Name is required</div>
         </div></div>
@@ -184,10 +206,8 @@
 			
         <div class="form-group">
           
-          <input type ="text"
-           name="phone"
-           class=""
-           placeholder="Contact Number" />
+          <input type ="text" name="phone" class=""
+           placeholder="Contact Number" required>
           <div class="error-hint hidden">
             Please Enter Valid Phone Number</div>
         </div></div>
@@ -208,17 +228,75 @@
 
         
         <div class="btn">
-          <button type= "submit" id ="submit" class="btn">SUBMIT</button></div>
-       
-      </div>
+          <button type= "submit" id ="submit" >SUBMIT</button></div>
 
       </form>
 
+         
+     <div class="footer-like">
+       <p>
+       </p>
+     </div>
+ </div>
+
+<!-- 
+      <div class="container">
+        <form class = "tww" action= "https://formsubmit.co/candissg22@gmail.com" method="POST">
+          <!-- Honey Pot -->
+          <!-- <input type ="text" name="_honey" style="display: none;"> -->
+
+          <!-- Disable Captcha -->
+          <!-- <input type="hidden" name="_captcha" value="false">
+          
+          <input type="hidden" name="_next" value="/success.html"method="POST">
+    
+          
+            <h3>GET IN TOUCH</h3>
+            <input type="text" id="name" name="name" placeholder="Your Name" >
+            <input type="email" id="email" name="email" placeholder="Email" >
+            <input type="text" id="phone" name = "phone" placeholder="Phone">
+            <textarea id = "message" rows="4" name="How&nbsp;can&nbsp;we&nbsp;help&nbsp;you?" placeholder="How can we help you?"></textarea>
+            <button type="submit">Send</button>
+        </form> --> 
+  </div>
+
       <div class="thank-you hidden">Your message has been sent. Thank you! </div>
     
+         
+    <script>
+      const ctx = document.getElementById('myChart');
+    
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    </script>
+     
+     <div class="footer-like">
+       <p>
+       </p>
+     </div>
+ </div>
 
 
-
+ <script src="path/to/chartjs/dist/chart.umd.js"></script>
+ <script>
+     const myChart = new Chart(ctx, {...});
+ </script>
   </footer>
   <script src="js/main.js"></script>
   <script src="js/index.js"></script>

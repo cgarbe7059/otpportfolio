@@ -116,24 +116,6 @@ textarea {
   margin: 20px auto 25px auto;
 }
 
-.btn, .submit {
-  background-color: coral;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  width: 200px;
-  font-size: 30px
-  height: 55px;
-  border-radius: 30px;
-  font-weight: 300;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;  
-  display: inline;
-
-}
 
 .submit-btn:hover {
   transform: translateY(1px);

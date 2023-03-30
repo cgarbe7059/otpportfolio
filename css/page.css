@@ -31,7 +31,6 @@ nav {
 }
 
 ul {
-    display: flex;
     list-style-type: none;
     width: 700px;
     justify-content: space-around;
@@ -40,6 +39,15 @@ ul {
 
 li {
     text-decoration: none;
+    
+}
+
+.am {
+    display: flex;
+    list-style-type: none;
+    width: 1300px;
+    justify-content: space-around;
+    font-size: 20px;
 }
 
 h1 {
@@ -176,6 +184,7 @@ hr {
 a {
     text-decoration: none;
     color: white;
+    text-align: center;
 }
 
 .hamburger {
@@ -184,6 +193,16 @@ a {
 
 .hamburger:focus{
     outline: 0;
+}
+
+.search {
+  padding: 60px;
+    }
+
+.container {
+    text-align: center;
+    margin: auto;
+    width: 800px;  
 }
 
 

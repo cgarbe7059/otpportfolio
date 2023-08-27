@@ -1,0 +1,56 @@
+/* Load Screen CSS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+ .main {
+    text-align: center;
+    width: 90%;
+    opacity: 0;
+    display: none;
+    transition: opacity 1s ease-in;
+} 
+
+.main h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    color: #989898;
+}
+
+.main p {
+    font-size: 20px;
+    color: #989898;
+}
+
+.btn {
+    display: inline-block;
+    background: #FF480D;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-family: sans-serif;
+    
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+
